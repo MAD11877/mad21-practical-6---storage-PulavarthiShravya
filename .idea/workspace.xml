@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,12 +24,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b3abb8f-47b7-4ea2-b736-5128d235d12a" name="Default Changelist" comment="" />
+    <list default="true" id="9b3abb8f-47b7-4ea2-b736-5128d235d12a" name="Default Changelist" comment="practical 6">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/sg/edu/np/madpractical/DBHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/sg/edu/np/madpractical/ListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/sg/edu/np/madpractical/ListActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/sg/edu/np/madpractical/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/sg/edu/np/madpractical/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/sg/edu/np/madpractical/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/sg/edu/np/madpractical/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/simplerecyclerview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/simplerecyclerview.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/simplerecyclerview2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/simplerecyclerview2.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -42,6 +57,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -54,6 +76,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../MADPractical-practical4-storage/MADPractical-practical4-storage" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -63,7 +86,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="MADPractical.app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -160,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623750075926</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="practical 6">
+      <created>1623750151432</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1623750151432</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,13 +212,29 @@
     <option name="LAST_COMMIT_MESSAGE" value="practical 6" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="371" y="95" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1623750529478">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="95" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1623750529478" />
+    <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser" timestamp="1623751300167">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1623751300167" />
+    <state x="121" y="50" key="DiffContextDialog" timestamp="1623750159507">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="121" y="50" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1623750159507" />
     <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1623748971510">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1623748971510" />
-    <state x="233" y="60" key="Vcs.Push.Dialog.v2" timestamp="1623750080334">
+    <state x="142" y="0" key="SettingsEditor" timestamp="1623750382201">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="60" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1623750080334" />
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1623750382201" />
+    <state x="233" y="60" key="Vcs.Push.Dialog.v2" timestamp="1623750160478">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="60" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1623750160478" />
   </component>
 </project>
