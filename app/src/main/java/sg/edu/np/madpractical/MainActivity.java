@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 DBHandler db = new DBHandler(this);
-                db.updateUser(u);
+                db.updateUser(newUser);
             }
         });
     }

@@ -26,7 +26,7 @@ public class SimpleAdapter extends RecyclerView.Adapter<SimpleViewHolder> {
 
     public SimpleViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View item = null;
-        if(viewType == 0)
+        if(viewType == 7)
         {
             item = LayoutInflater.from(parent.getContext()).inflate(R.layout.simplerecyclerview,parent,false);
         }

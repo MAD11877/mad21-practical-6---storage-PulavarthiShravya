@@ -21,7 +21,7 @@ import java.util.jar.Attributes;
 
 public class ListActivity extends AppCompatActivity {
     private final static String TAG = "ListActivity";
-    ArrayList<User> myList = new ArrayList<>(); //making a list, defining that the list is a string
+    static ArrayList<User> myList;
 
     RecyclerView recyclerView;
     ImageView imageView;
@@ -33,17 +33,19 @@ public class ListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
+        DBHandler db = new DBHandler(this);
+        myList = db.getUsers();
+
         //adding random users into a list & creating objects
-        for (int i = 0; i < 21; i++) {
-            User newUser = new User("Name - " + randInt(), "Description " + randInt(), i, randInt() % 2 == 1);
-            myList.add(newUser);
-        }
+//        for (int i = 0; i < 21; i++) {
+//            User newUser = new User("Name - " + randInt(), "Description " + randInt(), i, randInt() % 2 == 1);
+//           myList.add(newUser);
+//        }
 
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
         SimpleAdapter sAdapter = new SimpleAdapter(myList);
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(mLayoutManager);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(sAdapter);
     }
 
