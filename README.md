@@ -1,20 +1,26 @@
-# MAD Practical 6 - Storage
-Continuing from previous weeks, you might have observed that the values generated and changes made by users are not saved. This week, you will be adding persistant storage to your app. <br/>
+# MAD Practical 2 - Activity
+You will be creating your first Android app! Your app will have a profile page on its main Activity.<br/>
 Follow the instructions below to complete your app.
 
-1. Create your db handler class extending `SQLiteOpenHelper`. This class will create a new database upon initialization. There is a `Use`r table, whose structure follows the `User` class diagram. 20 `User` data are generated and inserted into the table. The `name`, `description` and value of `followed` are randomized, the value of `id` is an auto-increment primary key.
+1. Create a new project with the following configuration,
+    * Empty Activity
+    * Language: Java
+    * Minimum API level: API 19: Android 4.4 (KitKat)
+2. Create a User class based on the class diagram below.
 
-<img width="137" alt="user_cd" src="https://user-images.githubusercontent.com/31364147/114372223-e21dff00-9bb3-11eb-80fe-28d712cbc170.png">
-<img width="698" alt="p6_db" src="https://user-images.githubusercontent.com/31364147/114372212-e0543b80-9bb3-11eb-9dec-092610bb346d.PNG">
+![User Class Diagram](/images/user_cd.png)
 
-2.	Create a `getUsers()` function in your db handler. This function will returns all the user information from the database as a List. 
+3. Create the layout of your main activity according to the figure shown below.
 
-    Modify your `RecyclerView` so that it is pre-populated with information from the database only.
+![Screen Mockup](/images/screen_mock.png)
 
-3.	Create a `updateUser()` function in your db handler. This function will receive a `User` object and update the corresponding value in the database.
+4. In your onCreate method, the name and description are loaded from the User object. The button on the left will show “Follow” if the variable followed is false, and vice versa.
 
-    Modify your `MainActivity` so that it calls this function to update the database every time the Follow/Unfollow button is clicked.
+5.	When the left button is clicked, it will toggle the text between Follow and Unfollow. The variable followed is also updated to reflect this.
 
-4.	If all the above have been modified successfully, changes made to the user profile will be saved persistently. Test your app to verify this behaviour.
+6.	When the app is rotated, some of the UI components disappeared as shown in the figure below. Resolve this UI bug such that all components are visible regardless of the screen orientation.
+Hint: ScrollView
 
-5.	Remove the `intent-filter` for the `MainActivity` from the `manifest`. This will allow the user to launch your app via the `ListActivity` only.
+![Horizontal Rotation](/images/Screenshot_1617792845.png)
+
+To submit your practical, remember to commit the changes and push to remote repository.
