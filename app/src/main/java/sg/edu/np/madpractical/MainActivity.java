@@ -22,9 +22,7 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-
-    //creating 20 users
-    User newUser = new User("Shravya", "Hello I'm Shravya", 1, false);
+    User newUser;
 
     private final static String TAG = "Main Activity";
     @Override
@@ -35,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
         Intent receivedData = getIntent();
         int randNumber = receivedData.getIntExtra("Random", 0);
+        newUser = ListActivity.myList.get(randNumber);
 
 
         TextView name = findViewById(R.id.textView);
@@ -61,7 +60,8 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Unfollwed", Toast.LENGTH_LONG).show();
                 }
 
-                //toast message
+                DBHandler db = new DBHandler(this);
+                db.updateUser(u);
             }
         });
     }
